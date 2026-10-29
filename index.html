@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <style>
+    :root {
+      --black: #0b0810;
+      --dark-purple: #1c102b;
+      --purple: #7138a8;
+      --light-purple: #c9a7f2;
+      --white: #f5f0fa;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: var(--white);
+      background: var(--black);
+    }
+
+    header {
+      background: var(--dark-purple);
+      padding: 24px;
+      text-align: center;
+      border-bottom: 1px solid var(--purple);
+    }
+
+    nav {
+      background: #130c1d;
+      padding: 14px;
+      text-align: center;
+    }
+
+    nav a {
+      color: var(--light-purple);
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+    nav a:hover {
+      color: white;
+    }
+
+    .hero {
+      padding: 75px 20px;
+      text-align: center;
+      background: radial-gradient(ellipse at top, #2a1640, var(--black) 70%);
+    }
+
+    .hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--purple);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      background: #8b4dcc;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 35px 20px;
+    }
+
+    .card {
+      background: var(--dark-purple);
+      padding: 20px;
+      margin: 12px 0;
+      border: 1px solid #39224f;
+      border-radius: 8px;
+    }
+
+    footer {
+      background: #130c1d;
+      color: var(--light-purple);
+      text-align: center;
+      padding: 18px;
+      border-top: 1px solid var(--purple);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <p>A simple website made with HTML and CSS</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <div class="hero" id="home">
+      <h2>Welcome!</h2>
+      <p>Discover what I do and explore my work.</p>
+      <a class="button" href="#about">Learn More</a>
+    </div>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>Write a short introduction about yourself here.</p>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>My Projects</h2>
+      <div class="card">
+        <h3>Project One</h3>
+        <p>Describe one of your projects here.</p>
+      </div>
+      <div class="card">
+        <h3>Project Two</h3>
+        <p>Describe another project here.</p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="card">
+        <p>Email: hello@example.com</p>
+        <a class="button" href="mailto:hello@example.com">Send an Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 My Portfolio</p>
+  </footer>
+
+</body>
+</html>
